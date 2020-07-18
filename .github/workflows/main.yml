@@ -26,11 +26,11 @@ jobs:
       uses: nogsantos/ssh-scp-deploy@v1.2.1
       with:
         # Sorce dir to deploy
-        src: /katie
+        src: templates/katie
         # SSH address
         host: ${{ secrets.HOST }}
         # Remote dir path
-        remote: /shared/templates
+        remote: /shared
         # SSH Port
         # port: # optional, default is 22
         # SSH User name
